@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>logo <i class="fa-solid fa-globe"></i> ipsum</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="">Service</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">API</a></li>
+            <button class="btn btn-left">Login / Sign Up</button>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "300px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>The Next-Gen SMM Panels</h1>
+                <elit,>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing <br />elit, sed do
+                    eiusmod tempor incididunt ut labore et <br /> dolore magna aliqua. Quis
+                    ipsum suspendisse ultrices gravida. <br />Risus commodo viverra maecenas
+                    accumsan lacus vel facilisis.
+                    </p>
+            </div>
+
+            <div class="showcase-form">
+                <form>
+                    <div class="form-control">
+                        <span class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <input type="email" name="email" placeholder="" required />
+                    </div>
+                    <div class="form-control">
+                        <span class="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </span>
+                        <input type="password" name="password" placeholder="" required />
+                    </div>
+                    <div class="flex-container">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <a href="#" class="label-card">Forget password?</a>
+                    </div>
+                </form>
+                <button class="hero-btn">Login / Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-sec">
+        <div class="container">
+            <div class="stats">
+                <div class="header">
+                    SMM Panels<br />
+                    Has transparent<br />
+                    <p>Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </span>
+                    <div class="stat-value">0.14 SEC</div>
+                    <div class="stat-description">Every An order</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">
+                        <i class="fa-solid fa-print"></i>
+                    </span>
+                    <div class="stat-value">637 K</div>
+                    <div class="stat-description">Orders Completed</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </span>
+                    <div class="stat-value">$0.01/1K</div>
+                    <div class="stat-description">Prices starting</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- card -->
+    <section class="card-slide">
+        <div class="container mt">
+            <h1 class="panels-heading title text-center">How Does SMM Panel Works?</h1>
+            <!-- First Card -->
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="panel-icon">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum dolor sit amet</h2>
+                                <p class="description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                    atque nam ipsam tempore repellendus laboriosam vel id, culpa
+                                    laudantium recusandae perferendis debitis similique totam
+                                    maiores earum provident soluta facere voluptas.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="panel-icon">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum dolor sit amet</h2>
+                                <p class="description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                    atque nam ipsam tempore repellendus laboriosam vel id, culpa
+                                    laudantium recusandae perferendis debitis similique totam
+                                    maiores earum provident soluta facere voluptas.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="panel-icon">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum dolor sit amet</h2>
+                                <p class="description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                    atque nam ipsam tempore repellendus laboriosam vel id, culpa
+                                    laudantium recusandae perferendis debitis similique totam
+                                    maiores earum provident soluta facere voluptas.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="panel-icon">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum dolor sit amet</h2>
+                                <p class="description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                    atque nam ipsam tempore repellendus laboriosam vel id, culpa
+                                    laudantium recusandae perferendis debitis similique totam
+                                    maiores earum provident soluta facere voluptas.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="panel-icon">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum dolor sit amet</h2>
+                                <p class="description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                    atque nam ipsam tempore repellendus laboriosam vel id, culpa
+                                    laudantium recusandae perferendis debitis similique totam
+                                    maiores earum provident soluta facere voluptas.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="panel-icon">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lorem, ipsum dolor sit amet</h2>
+                                <p class="description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                    atque nam ipsam tempore repellendus laboriosam vel id, culpa
+                                    laudantium recusandae perferendis debitis similique totam
+                                    maiores earum provident soluta facere voluptas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-button-next swiper-navBtn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <div class="swiper-button-prev swiper-navBtn">
+                    <div class="outer-circle">
+                        <div class="inner-circle">
+                            <div class="inner-div">
+                                <img src="images/logos/left-arrow.png" alt="left-button">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section class="faqs">
+        <div class="faq-container">
+            <h2 class="title text-center">
+                Frequently Asked Questions
+            </h2>
+            <div class="faq">
+                <div class="question">
+                    <h3>
+                        <div class="icon-text">
+                            <span class="faq-icon">
+                                <i class="fa-solid fa-question"></i>
+                            </span>
+                            Lorem ipsum dolor sit amet.
+                        </div>
+
+                    </h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum impedit voluptate alias
+                        quibusdam
+                        dolorem aliquam tenetur? Illum, explicabo eaque enim fuga animi dolor quam! Sit minus dolores
+                        voluptas libero quia.</p>
+                </div>
+            </div>
+            <!-- faq 2 -->
+            <div class="faq">
+                <div class="question">
+                    <h3>
+                        <div class="icon-text">
+                            <span class="faq-icon">
+                                <i class="fa-solid fa-question"></i>
+                            </span>
+                            Lorem ipsum dolor sit amet.
+                        </div>
+
+                    </h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum impedit voluptate alias
+                        quibusdam
+                        dolorem aliquam tenetur? Illum, explicabo eaque enim fuga animi dolor quam! Sit minus dolores
+                        voluptas libero quia.</p>
+                </div>
+            </div>
+            <!-- faq 3 -->
+            <div class="faq">
+                <div class="question">
+                    <h3>
+                        <div class="icon-text">
+                            <span class="faq-icon">
+                                <i class="fa-solid fa-question"></i>
+                            </span>
+                            Lorem ipsum dolor sit amet.
+                        </div>
+
+                    </h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum impedit voluptate alias
+                        quibusdam
+                        dolorem aliquam tenetur? Illum, explicabo eaque enim fuga animi dolor quam! Sit minus dolores
+                        voluptas libero quia.</p>
+                </div>
+            </div>
+            <!-- faq 4 -->
+            <div class="faq">
+                <div class="question">
+                    <h3>
+                        <div class="icon-text">
+                            <span class="faq-icon">
+                                <i class="fa-solid fa-question"></i>
+                            </span>
+                            Lorem ipsum dolor sit amet.
+                        </div>
+
+                    </h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum impedit voluptate alias
+                        quibusdam
+                        dolorem aliquam tenetur? Illum, explicabo eaque enim fuga animi dolor quam! Sit minus dolores
+                        voluptas libero quia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="title text-center">
+                Here's what <br /> our clients say
+            </h2>
+            <div class="testimonials-content">
+                <div class="swiper js-testimonials-slider js-testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials-item">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                nemo libero sunt laudantium possimus alias iusto ipsa quaerat
+                                quibusdam voluptatibus ducimus reiciendis commodi explicabo
+                                vitae illo, culpa ad nam corporis.
+                            </p>
+
+                            <div class="text-box">
+                                <div class="name-box">
+                                    <h3 class="name">Joel Angel</h3>
+                                    <span class="job">Web Developer</span>
+                                </div>
+                                <div class="testimonials-icon">
+                                    <i class="fa-regular fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="swiper-slide testimonials-item">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                nemo libero sunt laudantium possimus alias iusto ipsa quaerat
+                                quibusdam voluptatibus ducimus reiciendis commodi explicabo
+                                vitae illo, culpa ad nam corporis.
+                            </p>
+
+                            <div class="text-box">
+                                <div class="name-box">
+                                    <h3 class="name">Joel Angel</h3>
+                                    <span class="job">Web Developer</span>
+                                </div>
+                                <div class="testimonials-icon">
+                                    <i class="fa-regular fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="swiper-slide testimonials-item">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                nemo libero sunt laudantium possimus alias iusto ipsa quaerat
+                                quibusdam voluptatibus ducimus reiciendis commodi explicabo
+                                vitae illo, culpa ad nam corporis.
+                            </p>
+
+                            <div class="text-box">
+                                <div class="name-box">
+                                    <h3 class="name">Joel Angel</h3>
+                                    <span class="job">Web Developer</span>
+                                </div>
+                                <div class="testimonials-icon">
+                                    <i class="fa-regular fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="swiper-slide testimonials-item">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                nemo libero sunt laudantium possimus alias iusto ipsa quaerat
+                                quibusdam voluptatibus ducimus reiciendis commodi explicabo
+                                vitae illo, culpa ad nam corporis.
+                            </p>
+
+                            <div class="text-box">
+                                <div class="name-box">
+                                    <h3 class="name">Joel Angel</h3>
+                                    <span class="job">Web Developer</span>
+                                </div>
+                                <div class="testimonials-icon">
+                                    <i class="fa-regular fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="swiper-slide testimonials-item">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                nemo libero sunt laudantium possimus alias iusto ipsa quaerat
+                                quibusdam voluptatibus ducimus reiciendis commodi explicabo
+                                vitae illo, culpa ad nam corporis.
+                            </p>
+
+                            <div class="text-box">
+                                <div class="name-box">
+                                    <h3 class="name">Joel Angel</h3>
+                                    <span class="job">Web Developer</span>
+                                </div>
+                                <div class="testimonials-icon">
+                                    <i class="fa-regular fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center js-testimonials-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="text-column">
+            <h1>logo <i class="fa-solid fa-globe"></i> ipsum</h1>
+            <div class="column-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <!-- images -->
+                <div class="image-column">
+                    <img src="/images/logos/mastercard.png" alt="">
+                    <img src="/images/logos/visa.webp" alt="">
+                    <img src="/images/logos/payoneer.png" alt="">
+                    <img src="/images/logos/skrill.png" alt="">
+                    <img src="/images/logos/bitcoin.png" alt="">
+                </div>
+
+            </div>
+            <div class="column-2">
+                <h3> © Copyright. 2024 All rights reserved</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-a">Blog</a></li>
+                    <li><a href="#" class="footer-a">FAQ</a></li>
+                    <li><a href="#" class="footer-a">Terms & Policy</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+<!-- Swiper Js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+
+
+<!-- Javascript -->
+<script src="js/script.js"></script>
+
+</html>
