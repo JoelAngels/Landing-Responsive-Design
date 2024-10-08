@@ -168,7 +168,6 @@ nav ul li a {
 }
 
 .showcase-text {
-  animation: slideInFromLeft 1s ease-in;
 }
 
 .showcase-form {
@@ -524,6 +523,7 @@ label {
   height: 40px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .question {
   display: flex;
@@ -636,7 +636,7 @@ svg {
 .testimonials-item .job {
   text-transform: capitalize;
   color: #606b86;
-  font-size: small;
+  font-size: 14px;
 }
 
 .testimonials p {
